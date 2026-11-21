@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0a1124">
+<meta name="robots" content="noindex">
+<title>Pesanan Berhasil — NEVERLAND BANDUNG 2027</title>
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:calc(24px + env(safe-area-inset-top)) 20px calc(24px + env(safe-area-inset-bottom));
+    font-family:Inter,'Segoe UI',Arial,sans-serif;
+    background:
+        radial-gradient(circle at top,#173d77 0%,transparent 45%),
+        linear-gradient(135deg,#050a18,#0a1124,#050912);
+    color:#fff;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+    -webkit-tap-highlight-color:transparent
+}
+
+.bg-glow{
+    position:fixed;
+    width:380px;
+    height:380px;
+    background:#d4af37;
+    filter:blur(160px);
+    opacity:.13;
+    border-radius:50%;
+    top:-130px;
+    right:-110px;
+    pointer-events:none
+}
+
+.bg-glow-2{
+    position:fixed;
+    width:300px;
+    height:300px;
+    background:#173d77;
+    filter:blur(140px);
+    opacity:.18;
+    border-radius:50%;
+    bottom:-100px;
+    left:-80px;
+    pointer-events:none
+}
+
+.container{
+    width:100%;
+    max-width:480px;
+    position:relative;
+    z-index:1
+}
+
+.brand-header{
+    text-align:center;
+    margin-bottom:20px
+}
+
+.brand-header .brand{
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:.3em;
+    color:#f4d77d;
+    text-transform:uppercase
+}
+
+.brand-header .event-name{
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:.12em;
+    color:#aeb8c8;
+    margin-top:4px;
+    text-transform:uppercase
+}
+
+.success-card{
+    padding:45px 30px;
+    text-align:center;
+    border:1px solid rgba(212,175,55,.35);
+    border-radius:24px;
+    background:rgba(255,255,255,.055);
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+    box-shadow:0 25px 80px rgba(5,10,24,.55),inset 0 1px 0 rgba(255,255,255,.06);
+    animation:fadeUp .8s ease
+}
+
+.success-card::before{
+    content:"";
+    position:absolute;
+    top:0;left:9%;right:9%;
+    height:2px;
+    background:linear-gradient(90deg,transparent,#f4d77d,#d4af37,#f4d77d,transparent);
+    border-radius:0 0 4px 4px
+}
+
+.icon-wrapper{
+    width:100px;
+    height:100px;
+    margin:0 auto 28px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    border:2px solid #d4af37;
+    background:rgba(212,175,55,.12);
+    box-shadow:0 0 35px rgba(212,175,55,.2);
+    animation:pulse 2s infinite;
+    position:relative
+}
+
+.icon-wrapper svg{
+    width:48px;
+    height:48px;
+    stroke:#f4d77d;
+    stroke-width:3;
+    fill:none;
+    stroke-linecap:round;
+    stroke-linejoin:round
+}
+
+h1{
+    font-size:32px;
+    font-weight:900;
+    letter-spacing:1px;
+    margin-bottom:12px;
+    background:linear-gradient(90deg,#fff8d1,#f4d77d);
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent
+}
+
+.subtitle{
+    color:#c4cbd8;
+    font-size:15px;
+    line-height:1.7;
+    margin-bottom:30px
+}
+
+.status-badge{
+    display:inline-block;
+    padding:7px 18px;
+    border-radius:999px;
+    background:rgba(212,175,55,.1);
+    border:1px solid rgba(212,175,55,.3);
+    color:#f4d77d;
+    font-size:10.5px;
+    font-weight:800;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    margin-bottom:20px
+}
+
+.email-box{
+    padding:23px 18px;
+    border-radius:16px;
+    border:1px solid rgba(212,175,55,.3);
+    background:rgba(212,175,55,.07);
+    margin-bottom:25px
+}
+
+.email-icon{
+    font-size:32px;
+    margin-bottom:12px;
+    line-height:1
+}
+
+.email-box h2{
+    font-size:17px;
+    color:#f4d77d;
+    margin-bottom:12px;
+    font-weight:800
+}
+
+.email-box p{
+    font-size:14px;
+    color:#e0e4eb;
+    line-height:1.8
+}
+
+.email-box strong{
+    color:#f4d77d
+}
+
+.warning{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    text-align:left;
+    padding:14px;
+    background:rgba(255,255,255,.045);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:12px;
+    margin-bottom:25px
+}
+
+.warning-icon{
+    font-size:19px;
+    line-height:1
+}
+
+.warning p{
+    font-size:12px;
+    color:#aeb8c8;
+    line-height:1.7
+}
+
+.warning strong{
+    color:#f4d77d
+}
+
+.cs-contact{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding:12px;
+    margin-bottom:25px;
+    border-radius:12px;
+    background:rgba(23,61,119,.25);
+    border:1px solid rgba(53,97,255,.2);
+    font-size:13px;
+    color:#c4cbd8
+}
+
+.cs-contact a{
+    color:#f4d77d;
+    font-weight:700;
+    text-decoration:none
+}
+
+.cs-contact a:hover{
+    text-decoration:underline
+}
+
+.cs-contact svg{
+    width:18px;
+    height:18px;
+    flex:none;
+    fill:#f4d77d
+}
+
+.btn-home{
+    display:block;
+    width:100%;
+    padding:15px;
+    border-radius:12px;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:800;
+    letter-spacing:.8px;
+    color:#15100a;
+    background:linear-gradient(135deg,#f4d77d,#d4af37);
+    box-shadow:0 8px 25px rgba(212,175,55,.2);
+    transition:transform .25s ease,box-shadow .25s ease;
+    text-align:center
+}
+
+.btn-home:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 30px rgba(212,175,55,.35)
+}
+
+.btn-home:active{
+    transform:translateY(0)
+}
+
+.footer{
+    margin-top:25px;
+    font-size:11px;
+    color:#7f8ba0;
+    letter-spacing:1px;
+    line-height:1.7
+}
+
+.footer b{
+    color:#aeb8c8
+}
+
+@keyframes fadeUp{
+    from{opacity:0;transform:translateY(30px)}
+    to{opacity:1;transform:translateY(0)}
+}
+
+@keyframes pulse{
+    0%,100%{box-shadow:0 0 20px rgba(212,175,55,.15)}
+    50%{box-shadow:0 0 40px rgba(212,175,55,.4)}
+}
+
+@media(max-width:480px){
+    .success-card{padding:38px 22px}
+    h1{font-size:27px}
+}
+
+@media(prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<div class="bg-glow"></div>
+<div class="bg-glow-2"></div>
+
+<div class="container">
+
+    <div class="brand-header">
+        <div class="brand">Artatix</div>
+        <div class="event-name">NEVERLAND BANDUNG 2027</div>
+    </div>
+
+    <div class="success-card">
+
+        <div class="icon-wrapper">
+            <svg viewBox="0 0 24 24"><path d="M5 12.5L10 17L20 7"></path></svg>
+        </div>
+
+        <h1>BERHASIL!</h1>
+
+        <p class="subtitle">
+            Pesanan Anda telah berhasil diselesaikan.
+            Terima kasih telah mempercayai Artatix sebagai platform pemesanan tiket Anda.
+        </p>
+
+        <div class="status-badge">PENDING — Menunggu Verifikasi</div>
+
+        <div class="email-box">
+
+            <div class="email-icon">✉️</div>
+
+            <h2>PERIKSA EMAIL ANDA</h2>
+
+            <p>
+                Silakan segera <strong>periksa kotak masuk
+                (INBOX)</strong> pada alamat email yang
+                telah Anda daftarkan.
+            </p>
+
+            <p style="margin-top:12px;">
+                Jika email belum ditemukan,
+                <strong>periksa juga folder SPAM,
+                JUNK, atau PROMOSI.</strong>
+            </p>
+
+        </div>
+
+        <div class="warning">
+            <div class="warning-icon">⚠️</div>
+
+            <p>
+                <strong>INFORMASI PENTING:</strong><br>
+                Status pesanan Anda adalah <strong>PENDING</strong> — pembayaran sedang diverifikasi panitia (±1×24 jam).
+                Mohon tunggu beberapa menit apabila email belum masuk.
+            </p>
+        </div>
+
+        <div class="cs-contact">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.9 11.9 0 0 0 12.05 0C5.47 0 .12 5.35.12 11.93c0 2.1.55 4.15 1.59 5.96L.02 24l6.25-1.64a11.86 11.86 0 0 0 5.78 1.49h.01c6.58 0 11.93-5.35 11.93-11.93 0-3.19-1.24-6.19-3.49-8.42ZM12.06 21.8h-.01a9.84 9.84 0 0 1-5.02-1.37l-.36-.21-3.71.97.99-3.62-.23-.37a9.88 9.88 0 1 1 8.34 4.6Z"/></svg>
+            <span>Butuh bantuan? Hubungi CS: <a href="https://wa.me/6282385613854">0823-8561-3854</a></span>
+        </div>
+
+        <a href="index.html" class="btn-home">
+            KEMBALI KE HALAMAN UTAMA
+        </a>
+
+        <div class="footer">
+            © 2026 <b>Artatix</b> — NEVERLAND BANDUNG 2027<br>
+            ALL RIGHTS RESERVED
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
