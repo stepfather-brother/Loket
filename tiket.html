@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Pilih kategori tiket RAISA HANDMADE NIGHT di Graha Bhakti Budaya, Jakarta Pusat. 9 kategori tiket mulai Rp750.000 hanya di LOKET13.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image:alt" content="Banner konser RAISA HANDMADE NIGHT">
+<meta property="og:title" content="Pilih Kategori | RAISA HANDMADE NIGHT | LOKET13">
+<meta property="og:description" content="Pilih kategori tiket RAISA HANDMADE NIGHT di Graha Bhakti Budaya, Jakarta Pusat. 9 kategori tiket mulai Rp750.000.">
+<meta property="og:image" content="banner.webp">
+<meta property="og:site_name" content="LOKET13">
+<meta property="og:locale" content="id_ID">
+<title>Pilih Kategori | RAISA HANDMADE NIGHT | LOKET13</title>
+<link rel="icon" type="image/png" href="logo-loket.webp">
+<link rel="preload" as="image" href="banner.webp" fetchpriority="high">
+<style>
+:root{color-scheme:light;--navy:#17345f;--blue:#0754d5;--ink:#17191e;--muted:#9297a1;--line:#dfe3e9;--card:#f5f6fa;--page:#fff;--red:#d64550;--red-bg:#fdeced}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased;transition:opacity .28s ease}
+body.fade-out{opacity:0}
+img{display:block;max-width:100%}
+button,a{-webkit-tap-highlight-color:transparent}
+:focus-visible{outline:3px solid #4b86f4;outline-offset:3px}
+.site-header{height:90px;padding:0 max(22px,calc((100% - 1120px)/2));display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:16px}
+.brand{display:inline-flex;align-items:center;text-decoration:none}
+.brand img{height:clamp(30px,4vw,43px);width:auto}
+.language{display:inline-flex;align-items:center;border:0;border-radius:28px;background:#f5f6f9;padding:13px 17px;color:#20232a;font-family:inherit;font-size:15px;font-weight:700;white-space:nowrap}
+.steps{min-height:82px;display:flex;align-items:center;justify-content:center;gap:clamp(10px,3vw,38px);padding:15px 18px;border-bottom:1px solid var(--line);color:#a9b2c1}
+.step{display:flex;align-items:center;gap:12px;white-space:nowrap;font-size:15px}
+.step-number{display:grid;place-items:center;width:43px;height:43px;border:1.5px solid #b8c1cf;border-radius:50%;font-size:20px}
+.step.active{color:#111;font-weight:700}
+.step.active .step-number{border:2px solid var(--blue);color:var(--blue)}
+.step-chevron{font-size:27px;font-weight:300;color:#aeb8c7}
+main{width:min(100% - 40px,1080px);margin:0 auto}
+.hero-banner{width:100%;aspect-ratio:16/5;overflow:hidden;background:#f3d8df;margin:0}
+.hero-banner img{width:100%;height:100%;object-fit:cover}
+.event-title{display:flex;align-items:center;justify-content:center;gap:clamp(15px,4vw,55px);margin:42px 0 12px;text-align:center;color:var(--navy)}
+.event-title:before,.event-title:after{content:"";height:1px;background:#d8dce2;flex:1;max-width:100px}
+.event-title h1{font-size:clamp(21px,3.2vw,32px);line-height:1.25;margin:0;font-weight:750}
+.event-meta{margin:0 0 38px;text-align:center;color:var(--muted);font-size:clamp(14px,2vw,17px);font-weight:600}
+.seatmap{margin:0 0 44px;background:#fff;text-align:center}
+.seatmap img{width:100%;max-height:680px;object-fit:contain;margin:auto}
+.sales-title{margin:0 0 10px;color:var(--navy);font-size:clamp(23px,3.3vw,32px);font-weight:850;letter-spacing:.01em}
+.sales-note{margin:0 0 26px;color:var(--muted);font-size:13.5px;font-weight:600}
+.ticket-list{display:grid;grid-template-columns:1fr;gap:22px;margin-bottom:35px}
+.ticket{position:relative;overflow:hidden;background:var(--card);border:1px solid #d9dee7;border-radius:17px;padding:24px 27px 0}
+.ticket h2{font-size:clamp(19px,2.5vw,25px);font-weight:500;line-height:1.3;margin:0 0 22px}
+.features{margin:0;padding-left:23px;display:grid;gap:7px;font-size:clamp(15px,2vw,20px);font-style:italic;line-height:1.5;color:#24262b}
+.ticket.soldout{background:#f6f7fa;border-color:#e2e6ec}
+.ticket.soldout h2,.ticket.soldout .price{color:#9aa2af}
+.ticket.soldout .features{color:#a6adb9}
+.soldout-tag{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;background:var(--red-bg);color:var(--red);font-size:13px;font-weight:800;white-space:nowrap;-webkit-user-select:none;user-select:none}
+.soldout-tag:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--red)}
+.ticket-bottom{position:relative;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;margin:25px -27px 0;padding:22px 27px 24px;border-top:1px dashed #d6dce5}
+.ticket-bottom:before,.ticket-bottom:after{content:"";position:absolute;top:50%;width:25px;height:25px;border:1px solid #d9dee7;border-radius:50%;background:#fff;transform:translateY(-50%)}
+.ticket-bottom:before{left:-13px}.ticket-bottom:after{right:-13px}
+.price{font-size:clamp(20px,3vw,29px);font-weight:800;white-space:nowrap;font-variant-numeric:tabular-nums}
+.qty{display:inline-flex;align-items:center;gap:clamp(8px,1.6vw,14px)}
+.qty-btn{display:grid;place-items:center;width:46px;height:46px;border:1.5px solid var(--blue);border-radius:12px;background:#fff;color:var(--blue);font-family:inherit;font-size:24px;font-weight:600;line-height:1;cursor:pointer;-webkit-user-select:none;user-select:none;transition:background .18s,transform .18s,border-color .18s,color .18s}
+.qty-btn:hover:not([disabled]){background:#eef4ff}
+.qty-btn:active:not([disabled]){transform:scale(.94)}
+.qty-btn[disabled]{border-color:#c9d2de;color:#c9d2de;cursor:not-allowed}
+.qty-count{min-width:24px;text-align:center;font-size:clamp(17px,2.2vw,22px);font-weight:700;font-variant-numeric:tabular-nums}
+.payments{margin:0;text-align:center}
+.payments-title{margin:0 0 18px;color:var(--navy);font-size:14px;font-weight:800;letter-spacing:.16em}
+.payments-list{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.payments-list li{display:grid;place-items:center;height:44px;min-width:92px;padding:0 16px;border:1px solid var(--line);border-radius:9px;background:#fff;color:#3c4250;font-size:13px;font-weight:700}
+.site-footer{margin-top:34px;padding:22px 20px 30px;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:14px}
+.site-footer strong{color:var(--navy);font-weight:800}
+.copyright{margin:6px 0 0;font-size:12.5px}
+.bottom-bar{position:sticky;bottom:0;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:18px max(22px,calc((100% - 1000px)/2)) max(18px,env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid #edf0f4;box-shadow:0 -4px 18px rgba(20,40,75,.035);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.total-label{color:var(--muted);font-size:clamp(15px,2.4vw,22px);margin-bottom:4px}
+.total{font-size:clamp(21px,3vw,29px);font-weight:800;font-variant-numeric:tabular-nums}
+.primary{display:inline-flex;align-items:center;justify-content:center;min-height:62px;min-width:300px;padding:16px 28px;border:0;border-radius:16px;background:var(--blue);color:#fff;font-family:inherit;text-align:center;font-size:clamp(17px,2.6vw,24px);font-weight:500;cursor:pointer;transition:background .18s,transform .18s}
+.primary:hover:not([disabled]){background:#0647b7}
+.primary:active:not([disabled]){transform:scale(.985)}
+.primary[disabled]{background:#aebdd6;cursor:not-allowed}
+@media(min-width:900px){.ticket-list{grid-template-columns:repeat(2,minmax(0,1fr))}.ticket{padding-top:22px}.ticket-bottom{margin-top:22px}}
+@media(max-width:899px){.step:not(.active) .step-label{display:none}}
+@media(max-width:600px){
+ .site-header{height:76px;padding:0 18px}
+ .brand img{height:36px}
+ .language{padding:10px 13px}
+ .steps{min-height:70px;gap:10px;padding:12px 10px}.step{gap:8px;font-size:13px}.step-number{width:39px;height:39px;font-size:18px}.step-chevron{font-size:22px}
+ main{width:100%;margin:0}.hero-banner{aspect-ratio:16/5}
+ .event-title{margin:28px 17px 10px;gap:13px}.event-title:before,.event-title:after{max-width:45px}
+ .event-meta{margin:0 17px 30px}
+ .seatmap{margin:0 17px 32px}.sales-title{margin:0 17px 8px}.sales-note{margin:0 17px 22px}
+ .ticket-list{padding:0 17px;gap:20px;margin-bottom:25px}.ticket{padding:21px 20px 0;border-radius:15px}
+ .ticket h2{margin-bottom:20px}.features{padding-left:21px;gap:6px}
+ .ticket-bottom{margin:22px -20px 0;padding:19px 20px 21px;gap:12px}
+ .qty-btn{width:42px;height:42px;border-radius:10px;font-size:22px}
+ .bottom-bar{gap:12px;padding:14px 16px max(14px,env(safe-area-inset-bottom))}
+ .primary{min-width:0;flex:0 1 52%;min-height:60px;padding:13px 12px;border-radius:14px}
+ .site-footer{margin-top:26px;padding:18px 20px 26px}
+}
+@media(max-width:370px){.step{gap:5px;font-size:12px}.step-number{width:34px;height:34px}.step-chevron{font-size:18px}.brand img{height:31px}.language{font-size:13px}.bottom-bar{padding-left:11px;padding-right:11px}.primary{font-size:16px}.total-label{font-size:14px}.qty-btn{width:38px;height:38px}.qty{gap:7px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="site-header" id="top">
+  <a class="brand" href="#top" aria-label="LOKET13 - kembali ke atas"><img src="logo-loket.webp" alt="LOKET13" decoding="async"></a>
+  <span class="language" aria-label="Bahasa Indonesia">🇮🇩 ID</span>
+</header>
+<nav class="steps" aria-label="Tahapan pemesanan">
+  <div class="step active" aria-current="step"><span class="step-number">1</span><span class="step-label">Pilih Kategori</span></div>
+  <span class="step-chevron" aria-hidden="true">›</span>
+  <div class="step"><span class="step-number">2</span><span class="step-label">Data Pemesan</span></div>
+  <span class="step-chevron" aria-hidden="true">›</span>
+  <div class="step"><span class="step-number">3</span><span class="step-label">Pembayaran</span></div>
+  <span class="step-chevron" aria-hidden="true">›</span>
+  <div class="step"><span class="step-number">4</span><span class="step-label">E-Ticket</span></div>
+</nav>
+<main>
+  <figure class="hero-banner">
+    <img src="banner.webp" alt="Banner konser RAISA HANDMADE NIGHT" width="1600" height="500" fetchpriority="high" decoding="async" onerror="this.parentElement.hidden=true">
+  </figure>
+  <div class="event-title"><h1>RAISA HANDMADE NIGHT</h1></div>
+  <p class="event-meta">Rabu, 4 November 2026 &middot; Graha Bhakti Budaya, Jakarta Pusat</p>
+  <figure class="seatmap">
+    <img src="seatmap.webp" alt="Denah tempat duduk panggung dan kategori CAT 1 sampai CAT 6" width="1200" height="800" loading="lazy" decoding="async" onerror="this.parentElement.hidden=true">
+  </figure>
+  <h2 class="sales-title">ONLINE SALES</h2>
+  <p class="sales-note">Maksimal 4 tiket per kategori &middot; 6 tiket per transaksi</p>
+  <section class="ticket-list" aria-label="Daftar kategori tiket">
+    <article class="ticket" data-name="CAT 1 - CENTER" data-price="1250000"><h2>CAT 1 - CENTER</h2><ul class="features"><li>Numbered Seating</li><li>Early Entry access</li><li>Extended experience acoustic show at 16:30 - 17:00 WIB (No Meet &amp; Greet)</li><li>Ticket price excludes 10% government tax, 3% Admin fee, and any other applicable fees.</li></ul><div class="ticket-bottom"><span class="price">Rp1.250.000</span><div class="qty" role="group" aria-label="Jumlah tiket CAT 1 - CENTER"><button class="qty-btn qty-minus" type="button" aria-label="Kurangi tiket CAT 1 - CENTER" disabled>&minus;</button><span class="qty-count">0</span><button class="qty-btn qty-plus" type="button" aria-label="Tambah tiket CAT 1 - CENTER">+</button></div></div></article>
+    <article class="ticket soldout" data-name="CAT 2 - LEFT" data-price="1100000"><h2>CAT 2 - LEFT</h2><ul class="features"><li>Numbered Seating</li><li>Early Entry access</li><li>Extended experience acoustic show at 16:30 - 17:00 WIB (No Meet &amp; Greet)</li><li>Ticket price excludes 10% government tax, 3% Admin fee, and any other applicable fees.</li></ul><div class="ticket-bottom"><span class="price">Rp1.100.000</span><span class="soldout-tag">Full Booked</span></div></article>
+    <article class="ticket soldout" data-name="CAT 2 - RIGHT" data-price="1100000"><h2>CAT 2 - RIGHT</h2><ul class="features"><li>Numbered Seating</li><li>Early Entry access</li><li>Extended experience acoustic show at 16:30 - 17:00 WIB (No Meet &amp; Greet)</li><li>Ticket price excludes 10% government tax, 3% Admin fee, and any other applicable fees.</li></ul><div class="ticket-bottom"><span class="price">Rp1.100.000</span><span class="soldout-tag">Full Booked</span></div></article>
+    <article class="ticket soldout" data-name="CAT 3 - CENTER" data-price="850000"><h2>CAT 3 - CENTER</h2><ul class="features"><li>Numbered Seating</li><li>Ticket price excludes 10% government tax, 3% Admin fee, and any other applicable fees.</li></ul><div class="ticket-bottom"><span class="price">Rp850.000</span><span class="soldout-tag">Full Booked</span></div></article>
+    <article class="ticket" data-name="CAT 3 - LEFT" data-price="850000"><h2>CAT 3 - LEFT</h2><ul class="features"><li>Numbered Seating</li><li>Ticket price excludes 10% government tax, 3% Admin fee, and any other applicable fees.</li></ul><div class="ticket-bottom"><span class="price">Rp850.000</span><div class="qty" role="group" aria-label="Jumlah tiket CAT 3 - LEFT"><button class="qty-btn qty-minus" type="button" aria-label="Kurangi tiket CAT 3 - LEFT" disabled>&minus;</button><span class="qty-count">0</span><button class="qty-btn qty-plus" type="button" aria-label="Tambah tiket CAT 3 - LEFT">+</button></div></div></article>
+    <article class="ticket" data-name="CAT 3 - RIGHT" data-price="850000"><h2>CAT 3 - RIGHT</h2><ul class="features"><li>Numbered Seating</li><li>Ticket price excludes 10% government tax, 3% Admin fee, and any other applicable fees.</li></ul><div class="ticket-bottom"><span class="price">Rp850.000</span><div class="qty" role="group" aria-label="Jumlah tiket CAT 3 - RIGHT"><button class="qty-btn qty-minus" type="button" aria-label="Kurangi tiket CAT 3 - RIGHT" disabled>&minus;</button><span class="qty-count">0</span><button class="qty-btn qty-plus" type="button" aria-label="Tambah tiket CAT 3 - RIGHT">+</button></div></div></article>
+    <article class="ticket" data-name="CAT 4 - CENTER" data-price="750000"><h2>CAT 4 - CENTER</h2><ul class="features"><li>Numbered Seating</li><li>Ticket price excludes 10% government tax, 3% Admin fee, and any other applicable fees.</li></ul><div class="ticket-bottom"><span class="price">Rp750.000</span><div class="qty" role="group" aria-label="Jumlah tiket CAT 4 - CENTER"><button class="qty-btn qty-minus" type="button" aria-label="Kurangi tiket CAT 4 - CENTER" disabled>&minus;</button><span class="qty-count">0</span><button class="qty-btn qty-plus" type="button" aria-label="Tambah tiket CAT 4 - CENTER">+</button></div></div></article>
+    <article class="ticket soldout" data-name="CAT 5 - LEFT" data-price="650000"><h2>CAT 5 - LEFT</h2><ul class="features"><li>Numbered Seating</li><li>Ticket price excludes 10% government tax, 3% Admin fee, and any other applicable fees.</li></ul><div class="ticket-bottom"><span class="price">Rp650.000</span><span class="soldout-tag">Full Booked</span></div></article>
+    <article class="ticket soldout" data-name="CAT 6 - RIGHT" data-price="600000"><h2>CAT 6 - RIGHT</h2><ul class="features"><li>Numbered Seating</li><li>Ticket price excludes 10% government tax, 3% Admin fee, and any other applicable fees.</li></ul><div class="ticket-bottom"><span class="price">Rp600.000</span><span class="soldout-tag">Full Booked</span></div></article>
+  </section>
+  <section class="payments" aria-label="Metode pembayaran">
+    <h2 class="payments-title">METODE PEMBAYARAN</h2>
+    <ul class="payments-list">
+      <li>VISA</li>
+      <li>Mastercard</li>
+      <li>Livin' by Mandiri</li>
+      <li>BCA</li>
+      <li>GoPay</li>
+      <li>ShopeePay</li>
+      <li>QRIS</li>
+    </ul>
+  </section>
+</main>
+<footer class="site-footer">
+  <p>Dipersembahkan oleh <strong>LOKET</strong></p>
+  <p class="copyright">&copy; 2026 LOKET (PT Global Loket Sejahtera)</p>
+</footer>
+<div class="bottom-bar" role="region" aria-label="Ringkasan pesanan">
+  <div aria-live="polite">
+    <div class="total-label" id="total-label">Jumlah (0 tiket)</div>
+    <div class="total" id="total">Rp0</div>
+  </div>
+  <button class="primary" id="checkout" type="button" disabled aria-describedby="total-label">Pesan Sekarang</button>
+</div>
+<script>
+(function(){
+'use strict';
+const REDUCED=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const MAX_PER_CATEGORY=4;
+const MAX_TOTAL=6;
+const STORAGE_KEY='loket-order';
+const labelEl=document.getElementById('total-label');
+const totalEl=document.getElementById('total');
+const checkoutBtn=document.getElementById('checkout');
+const order=[];
+let qtyTotal=0;
+let sumTotal=0;
+let navigating=false;
+const rupiah=n=>'Rp'+new Intl.NumberFormat('id-ID').format(n);
+const sync=()=>{
+  const totalMax=qtyTotal>=MAX_TOTAL;
+  order.forEach(i=>{
+    const catMax=i.qty>=MAX_PER_CATEGORY;
+    i.minusBtn.disabled=i.qty<=0;
+    i.plusBtn.disabled=catMax||totalMax;
+    i.plusBtn.title=catMax?'Maks. '+MAX_PER_CATEGORY+' tiket per kategori':totalMax?'Maks. '+MAX_TOTAL+' tiket per transaksi':'';
+  });
+  labelEl.textContent='Jumlah ('+qtyTotal+' tiket)'+(totalMax?' — maksimum '+MAX_TOTAL:'');
+  totalEl.textContent=rupiah(sumTotal);
+  checkoutBtn.disabled=qtyTotal===0||navigating;
+};
+document.querySelectorAll('.ticket:not(.soldout)').forEach(card=>{
+  const item={
+    name:card.dataset.name,
+    price:Number.parseInt(card.dataset.price,10),
+    qty:0,
+    minusBtn:card.querySelector('.qty-minus'),
+    plusBtn:card.querySelector('.qty-plus'),
+    countEl:card.querySelector('.qty-count')
+  };
+  item.minusBtn.addEventListener('click',()=>{
+    if(item.qty<=0)return;
+    item.qty--;qtyTotal--;sumTotal-=item.price;
+    item.countEl.textContent=item.qty;
+    sync();
+  });
+  item.plusBtn.addEventListener('click',()=>{
+    if(item.qty>=MAX_PER_CATEGORY||qtyTotal>=MAX_TOTAL)return;
+    item.qty++;qtyTotal++;sumTotal+=item.price;
+    item.countEl.textContent=item.qty;
+    sync();
+  });
+  order.push(item);
+});
+const submitOrder=()=>{
+  const selected=order.filter(i=>i.qty>0).map(i=>({name:i.name,price:i.price,qty:i.qty}));
+  if(!selected.length||qtyTotal<1||qtyTotal>MAX_TOTAL)return false;
+  const payload={items:selected,totalQuantity:qtyTotal,totalPrice:sumTotal};
+  try{
+    sessionStorage.setItem(STORAGE_KEY,JSON.stringify(payload));
+    const saved=sessionStorage.getItem(STORAGE_KEY);
+    if(!saved||JSON.parse(saved).totalPrice!==sumTotal)throw new Error('Order storage verification failed');
+  }catch(err){
+    navigating=false;
+    document.body.classList.remove('fade-out');
+    sync();
+    window.alert('Pesanan belum dapat disimpan. Aktifkan penyimpanan browser, lalu coba kembali.');
+    return false;
+  }
+  window.location.assign('form.html');
+  return true;
+};
+const goToForm=()=>{
+  if(navigating)return;
+  navigating=true;
+  checkoutBtn.disabled=true;
+  if(REDUCED){submitOrder();return}
+  document.body.classList.add('fade-out');
+  window.setTimeout(()=>{if(!submitOrder())navigating=false},280);
+};
+window.addEventListener('pageshow',()=>{document.body.classList.remove('fade-out');navigating=false;sync()});
+checkoutBtn.addEventListener('click',()=>{if(qtyTotal===0)return;goToForm()});
+sync();
+})();
+</script>
+</body>
+</html>
