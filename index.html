@@ -1,1 +1,577 @@
 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="RAISA HANDMADE NIGHT – Live performance RAISA merayakan satu dekade album Handmade. Rabu, 4 November 2026, 19.00–22.00 WIB di Graha Bhakti Budaya, Jakarta Pusat. 9 kategori tiket mulai Rp750.000 hanya di LOKET13.">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="RAISA HANDMADE NIGHT | LOKET13">
+<meta property="og:description" content="Live performance RAISA merayakan satu dekade album Handmade. Rabu, 4 November 2026, 19.00–22.00 WIB di Graha Bhakti Budaya, Jakarta Pusat. 9 kategori tiket mulai Rp750.000.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="banner.webp">
+<meta property="og:site_name" content="LOKET13">
+<meta property="og:locale" content="id_ID">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="RAISA HANDMADE NIGHT | LOKET13">
+<meta name="twitter:description" content="Live performance RAISA merayakan satu dekade album Handmade. Rabu, 4 November 2026, 19.00–22.00 WIB di Graha Bhakti Budaya, Jakarta Pusat.">
+<meta name="twitter:image" content="banner.webp">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
+<link rel="preload" as="image" href="banner.webp" fetchpriority="high">
+<title>RAISA HANDMADE NIGHT | LOKET13</title>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Event","name":"RAISA HANDMADE NIGHT","startDate":"2026-11-04T19:00:00+07:00","endDate":"2026-11-04T22:00:00+07:00","eventStatus":"https://schema.org/EventScheduled","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","image":["banner.webp"],"description":"Live performance RAISA merayakan satu dekade album Handmade di Graha Bhakti Budaya, Jakarta Pusat.","location":{"@type":"Place","name":"Graha Bhakti Budaya","address":{"@type":"PostalAddress","streetAddress":"Jl. Cikini Raya No. 73","addressLocality":"Jakarta Pusat","addressRegion":"DKI Jakarta","addressCountry":"ID"}},"organizer":{"@type":"Organization","name":"JUNI Concert"},"performer":{"@type":"Person","name":"RAISA"},"offers":[
+{"@type":"Offer","name":"CAT 1 - CENTER","price":"1250000","priceCurrency":"IDR","availability":"https://schema.org/InStock"},
+{"@type":"Offer","name":"CAT 2 - LEFT","price":"1100000","priceCurrency":"IDR","availability":"https://schema.org/SoldOut"},
+{"@type":"Offer","name":"CAT 2 - RIGHT","price":"1100000","priceCurrency":"IDR","availability":"https://schema.org/SoldOut"},
+{"@type":"Offer","name":"CAT 3 - CENTER","price":"850000","priceCurrency":"IDR","availability":"https://schema.org/SoldOut"},
+{"@type":"Offer","name":"CAT 3 - LEFT","price":"850000","priceCurrency":"IDR","availability":"https://schema.org/InStock"},
+{"@type":"Offer","name":"CAT 3 - RIGHT","price":"850000","priceCurrency":"IDR","availability":"https://schema.org/InStock"},
+{"@type":"Offer","name":"CAT 4 - CENTER","price":"750000","priceCurrency":"IDR","availability":"https://schema.org/InStock"},
+{"@type":"Offer","name":"CAT 5 - LEFT","price":"650000","priceCurrency":"IDR","availability":"https://schema.org/SoldOut"},
+{"@type":"Offer","name":"CAT 6 - RIGHT","price":"600000","priceCurrency":"IDR","availability":"https://schema.org/SoldOut"}]}
+</script>
+<style>
+:root{--blue:#2264e5;--blue-dark:#1a53c4;--navy:#16305c;--navy-rgb:22,48,92;--navy-ink:#1c2b45;--green:#0e9d58;--green-bg:#e6f7ee;--red:#d64550;--red-bg:#fdeced;--muted:#6b7486;--line:#e4e7ee;--bg:#f4f6fa}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--navy-ink);font:14px/1.5 'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+.app{max-width:430px;margin:auto;background:#fff;min-height:100vh;box-shadow:0 0 30px rgba(var(--navy-rgb),.12)}
+.topbar{height:54px;padding:0 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #eef0f5;position:sticky;top:0;background:#fff;z-index:20}
+.topbar img{height:30px;width:auto;display:block}
+.progress{position:absolute;left:0;bottom:-1px;width:100%;height:3px;background:linear-gradient(90deg,var(--blue),#7a3ce8);transform-origin:0 50%;transform:scaleX(0);will-change:transform;z-index:21}
+.menu-wrap{position:relative}
+.menu-btn{background:none;border:0;padding:6px;cursor:pointer;display:grid;gap:4px}
+.menu-btn i{display:block;width:22px;height:2.5px;border-radius:2px;background:var(--navy);transition:transform .2s ease,opacity .2s ease}
+.menu-btn.open i:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.menu-btn.open i:nth-child(2){opacity:0}
+.menu-btn.open i:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+.menu-panel{position:absolute;right:0;top:calc(100% + 8px);min-width:210px;background:#fff;border:1px solid var(--line);border-radius:10px;box-shadow:0 12px 30px rgba(var(--navy-rgb),.18);padding:6px;opacity:0;visibility:hidden;transform:translateY(-6px);pointer-events:none;transition:opacity .2s ease,transform .2s ease,visibility .2s}
+.menu-panel.open{opacity:1;visibility:visible;transform:none;pointer-events:auto}
+.menu-panel a{display:block;padding:10px 12px;border-radius:7px;color:var(--navy-ink);text-decoration:none;font-size:13px;font-weight:600}
+.menu-panel a:hover{background:#f0f4fd;color:var(--blue)}
+.searchbar{margin:12px 16px 4px;display:flex;align-items:center;gap:10px;background:#eef1f7;border:1px solid #e2e7f0;border-radius:10px;padding:11px 14px}
+.searchbar input{flex:1;min-width:0;border:0;background:none;font:inherit;font-size:16px;color:var(--navy-ink);outline:none}
+.searchbar input::placeholder{color:#98a1b3}
+.searchbar svg{flex:none}
+.hero img{width:100%;height:auto;display:block}
+.content{padding:20px 16px 40px}
+h1{font-size:22px;line-height:1.3;margin:0 0 16px;font-weight:800;color:var(--navy);letter-spacing:-.2px}
+.meta-row{display:flex;align-items:flex-start;gap:12px;margin:0 0 14px;color:var(--navy);font-size:15px;font-weight:600;line-height:1.4}
+.meta-row svg{flex:none;margin-top:1px}
+.meta-row .dot{color:var(--blue)}
+.share{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font:inherit;font-size:15px;font-weight:700;margin:4px 0 18px;background:none;border:0;padding:0;cursor:pointer;user-select:none;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.share:hover{text-decoration:underline}
+.divider{border:0;border-top:1.5px dashed #d5dae4;margin:0 -16px 18px}
+.organizer{display:flex;align-items:center;gap:12px;margin-bottom:20px}
+.org-logo{width:38px;height:38px;border-radius:9px;overflow:hidden;background:linear-gradient(135deg,#2f6fe8,#7a3ce8);flex:none}
+.org-logo img{width:100%;height:100%;object-fit:cover;display:block}
+.org-label{font-size:11.5px;color:var(--muted)}
+.org-name{font-size:15px;font-weight:800;color:var(--navy);letter-spacing:.3px}
+.tabs{display:flex;gap:16px;border-bottom:1.5px solid var(--line);margin:0 -16px;padding:0 16px;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;padding:10px 0 12px;border-bottom:3px solid transparent;color:#78829a;font-size:13px;font-weight:600;text-decoration:none;white-space:nowrap}
+.tab.active{color:var(--blue);border-bottom-color:var(--blue);font-weight:800}
+.section{padding-top:22px;scroll-margin-top:64px}
+.section-title{display:flex;align-items:center;gap:9px;font-size:17px;font-weight:800;color:var(--navy);margin:0 0 14px}
+.section-title svg{flex:none}
+.desc{font-size:13px;color:#333c50;line-height:1.7}
+.pticket{background:#fff;border:1px solid #e8ebf2;border-radius:16px;box-shadow:0 8px 28px rgba(var(--navy-rgb),.08);overflow:hidden}
+.pt-head{width:100%;display:flex;justify-content:space-between;align-items:flex-start;gap:10px;padding:18px 18px 15px;border:0;border-bottom:1px solid #eef0f5;background:#fff;font:inherit;text-align:left;cursor:pointer}
+.pticket.collapsed .pt-head{border-bottom-color:transparent}
+.pt-name{display:block;font-size:17px;font-weight:800;color:var(--navy)}
+.pt-sub{display:block;font-size:12px;color:#8a93a6;margin-top:5px}
+.pt-sub b{color:var(--navy)}
+.pt-chev{margin-top:6px;transition:transform .25s ease}
+.pticket.collapsed .pt-chev{transform:rotate(180deg)}
+.pt-body{display:grid;grid-template-rows:1fr;transition:grid-template-rows .3s ease}
+.pticket.collapsed .pt-body{grid-template-rows:0fr}
+.pt-body-inner{overflow:hidden}
+.pt-row{padding:16px 18px 14px;transition:background .18s}
+.pt-row:not(.soldout):hover{background:#f7f9fd}
+.pt-row + .pt-row{border-top:1.5px dashed #d9dee8}
+.pt-row-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.pt-type{font-size:15px;font-weight:700;color:var(--navy-ink)}
+.pt-row.soldout .pt-type,.pt-row.soldout .pt-price{color:#a4adbe}
+.badge{padding:6px 14px;border-radius:999px;font-size:11.5px;font-weight:800;white-space:nowrap}
+.badge.available{background:var(--green-bg);color:var(--green)}
+.badge.available::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--green);margin-right:6px;vertical-align:1px;animation:pulse 1.6s infinite}
+.badge.fullbooked{background:var(--red-bg);color:var(--red)}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.pt-date{font-size:11.5px;color:#98a1b3;margin-top:6px}
+.pt-price{font-size:15px;font-weight:800;color:var(--navy);margin-top:10px}
+.rules{font-size:12px;color:#333c50}
+.rules ul{margin:6px 0;padding-left:18px}
+.rules li{margin:8px 0;line-height:1.6}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}
+.tag{border-radius:14px;padding:6px 12px;font-size:10.5px;font-weight:700}
+.tag:nth-child(odd){background:#e8f0fe;color:#1d5fd0}
+.tag:nth-child(even){background:#fff2df;color:#c06a00}
+.cards{display:flex;gap:11px;overflow-x:auto;scrollbar-width:none;padding-bottom:4px}
+.cards::-webkit-scrollbar{display:none}
+.event-card{min-width:150px;border:1px solid #e8ebf2;border-radius:10px;overflow:hidden;background:#fff;box-shadow:0 3px 12px rgba(var(--navy-rgb),.06)}
+.event-card img{width:100%;height:76px;object-fit:cover;display:block}
+.event-body{padding:9px 10px}
+.event-body b{font-size:11px;color:var(--navy);line-height:1.35;display:block}
+.event-body small{display:block;color:#8a93a6;font-size:9px;margin-top:4px}
+.price{font-weight:800;margin-top:7px;color:var(--blue);font-size:11.5px}
+.footer{position:relative;background:linear-gradient(180deg,#122a52,#0b1c38);color:#aab6cc;padding:30px 16px 150px}
+.footer:before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--blue) 50%,transparent)}
+.f-brand img{height:26px;width:auto;display:block;filter:brightness(0) invert(1)}
+.f-brand p{font-size:11.5px;color:#93a2bd;line-height:1.7;margin:12px 0 0;max-width:340px}
+.social{display:flex;gap:9px;margin-top:16px}
+.social a{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.08);color:#cfd9ea;transition:background .18s,color .18s,transform .18s}
+.social a:hover{background:var(--blue);color:#fff;transform:translateY(-2px)}
+.newsletter{margin:24px 0;padding:18px;border:1px solid rgba(255,255,255,.12);border-radius:14px;background:rgba(255,255,255,.05)}
+.nl-title{display:block;font-size:13px;font-weight:800;color:#fff;margin:0 0 12px;letter-spacing:.2px}
+.nl-row{display:flex;gap:8px}
+.nl-row input{flex:1;min-width:0;border:1px solid rgba(255,255,255,.16);border-radius:9px;background:rgba(255,255,255,.08);padding:11px 13px;color:#fff;font:inherit;font-size:16px;outline:none;transition:border-color .18s}
+.nl-row input::placeholder{color:#7d8ba5}
+.nl-row input:focus{border-color:var(--blue)}
+.nl-row button{flex:none;border:0;border-radius:9px;background:linear-gradient(180deg,#2e70ec,#1f5cd8);color:#fff;font:inherit;font-size:13px;font-weight:800;padding:11px 16px;cursor:pointer;transition:filter .18s,transform .18s}
+.nl-row button:hover{filter:brightness(1.08)}
+.nl-row button:active{transform:scale(.97)}
+.nl-msg{margin:10px 0 0;font-size:12px;color:#5fd39a;min-height:15px}
+.footer-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px 16px}
+.footer h3{font-size:10.5px;font-weight:800;margin:0 0 10px;color:#8fb3ff;text-transform:uppercase;letter-spacing:.9px}
+.footer-grid a{display:block;color:#aab6cc;text-decoration:none;font-size:12px;margin:8px 0;transition:color .18s}
+.footer-grid a:hover{color:#fff}
+.f-section{margin-top:24px}
+.payments{display:flex;flex-wrap:wrap;gap:7px}
+.pay{font-size:9.5px;font-weight:800;letter-spacing:.3px;border:1px solid rgba(255,255,255,.16);border-radius:6px;padding:6px 10px;background:rgba(255,255,255,.06);color:#c6d1e4;white-space:nowrap}
+.secure{display:flex;flex-wrap:wrap;gap:7px}
+.secure-badge{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:700;border:1px solid rgba(14,157,88,.45);border-radius:6px;padding:6px 10px;background:rgba(14,157,88,.12);color:#7ddcab;white-space:nowrap}
+.f-bottom{margin-top:26px;padding-top:18px;border-top:1px solid rgba(255,255,255,.1);text-align:center}
+.to-top{display:inline-flex;align-items:center;gap:7px;margin-bottom:14px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.07);color:#dbe4f2;border-radius:999px;padding:8px 16px;font:inherit;font-size:11px;font-weight:700;cursor:pointer;transition:background .18s,border-color .18s,color .18s}
+.to-top:hover{background:var(--blue);border-color:var(--blue);color:#fff}
+.copyright{font-size:10.5px;color:#7787a3;margin:6px 0 0}
+.f-legal{margin:6px 0 0;font-size:10.5px}
+.f-legal a{color:#aab6cc;text-decoration:none;margin:0 6px;transition:color .18s}
+.f-legal a:hover{color:#fff}
+.sticky{position:fixed;left:50%;bottom:0;transform:translateX(-50%);width:min(430px,100%);background:#fff;border-top:1px solid #e4e7ee;padding:10px 16px 14px;z-index:30;box-shadow:0 -6px 24px rgba(var(--navy-rgb),.1)}
+.sticky-row{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:9px}
+.sticky-label{font-size:12.5px;color:var(--muted)}
+.sticky-price{font-size:20px;font-weight:800;color:var(--navy)}
+.buy-btn{width:100%;border:0;border-radius:9px;background:linear-gradient(180deg,#2e70ec,#1f5cd8);color:#fff;font:inherit;font-size:16px;font-weight:800;padding:13px;cursor:pointer;box-shadow:0 6px 16px rgba(34,100,229,.35);transition:transform .15s ease,box-shadow .15s ease,background .15s ease;display:block;text-align:center;text-decoration:none;touch-action:manipulation;-webkit-tap-highlight-color:transparent;animation:glow 2.6s ease-in-out infinite}
+.buy-btn:hover{background:linear-gradient(180deg,#2a67de,var(--blue-dark));box-shadow:0 8px 20px rgba(34,100,229,.45)}
+.buy-btn:active{transform:scale(.98)}
+@keyframes glow{0%,100%{box-shadow:0 6px 16px rgba(34,100,229,.35)}50%{box-shadow:0 6px 24px rgba(34,100,229,.62)}}
+.fade{opacity:0;transform:translateY(10px);transition:opacity .4s ease,transform .4s ease}
+.fade.show{opacity:1;transform:none}
+.tab:focus-visible,.buy-btn:focus-visible,.pt-head:focus-visible,.searchbar input:focus-visible,.menu-btn:focus-visible,.menu-panel a:focus-visible,.share:focus-visible,.social a:focus-visible,.nl-row input:focus-visible,.nl-row button:focus-visible,.to-top:focus-visible,.footer-grid a:focus-visible,.f-legal a:focus-visible{outline:2.5px solid var(--blue);outline-offset:2px;border-radius:4px}
+@media(min-width:431px){body{padding:14px 0}.app{border-radius:12px}.topbar{border-radius:12px 12px 0 0}.footer{border-radius:0 0 12px 12px}}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .fade,.pt-chev,.pt-body,.pt-row,.buy-btn,.menu-btn i,.menu-panel,.badge.available::before,.social a,.to-top,.nl-row input,.nl-row button,.footer-grid a,.f-legal a{transition:none;animation:none}
+  .fade{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<noscript><style>.fade{opacity:1;transform:none}</style></noscript>
+<div class="app">
+  <header class="topbar">
+    <img src="logo.png" alt="LOKET13" width="120" height="30" decoding="async">
+    <div class="menu-wrap">
+      <button class="menu-btn" type="button" id="menuBtn" aria-label="Buka menu" aria-expanded="false" aria-controls="menuPanel"><i></i><i></i><i></i></button>
+      <nav class="menu-panel" id="menuPanel" aria-label="Menu navigasi">
+        <a href="#deskripsi">Deskripsi</a>
+        <a href="#tiket">Tiket</a>
+        <a href="#snk">Syarat dan Ketentuan</a>
+        <a href="#event-lain">Event Untuk Kamu</a>
+      </nav>
+    </div>
+    <div class="progress" id="progress" aria-hidden="true"></div>
+  </header>
+
+  <form class="searchbar" role="search">
+    <input type="search" id="eventSearch" placeholder="Cari event" aria-label="Cari event" enterkeyhint="search" autocomplete="off">
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#3a4358" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
+  </form>
+  <p id="searchStatus" class="org-label" role="status" aria-live="polite" style="margin:0 16px"></p>
+
+  <div class="hero"><img src="banner.webp" alt="Banner RAISA HANDMADE NIGHT" fetchpriority="high" decoding="async"></div>
+
+  <main class="content">
+    <h1>RAISA HANDMADE NIGHT</h1>
+
+    <div class="meta-row">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16305c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.3-7-11a7 7 0 0 1 14 0c0 5.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+      Graha Bhakti Budaya, Jakarta Pusat
+    </div>
+    <div class="meta-row">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16305c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>
+      Rabu, 4 November 2026 &middot; 19:00 – 22:00 WIB
+    </div>
+    <div class="meta-row">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16305c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg>
+      Konser <span class="dot">&bull;</span> Musik <span class="dot">&bull;</span> Pop Indonesia
+    </div>
+
+    <div class="tags"><span class="tag">raisa</span><span class="tag">konser</span><span class="tag">handmadenight</span></div>
+
+    <button class="share" type="button" id="shareBtn">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#2264e5" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.5 13.5 7 4M15.5 6.5l-7 4"/></svg>
+      <span class="share-label">Bagikan Event</span>
+    </button>
+
+    <hr class="divider">
+
+    <div class="organizer">
+      <div class="org-logo"><img src="logo-promotor.webp" alt="Logo JUNI Concert" width="38" height="38" loading="lazy" decoding="async"></div>
+      <div>
+        <div class="org-label">Diselenggarakan oleh</div>
+        <div class="org-name">JUNI Concert</div>
+      </div>
+    </div>
+
+    <nav class="tabs" aria-label="Navigasi detail event">
+      <a class="tab active" href="#deskripsi" aria-current="true">Deskripsi</a>
+      <a class="tab" href="#tiket">Tiket</a>
+      <a class="tab" href="#snk">Syarat dan Ketentuan</a>
+      <a class="tab" href="#event-lain">Event Untuk Kamu</a>
+    </nav>
+
+    <section class="section fade" id="deskripsi">
+      <h2 class="section-title">Deskripsi</h2>
+      <div class="desc">
+        <b>Live Performance by RAISA</b><br><br>
+        Merayakan satu dekade album <b>Handmade</b>, RAISA menghadirkan <b>RAISA HANDMADE NIGHT</b> — malam konser yang menampilkan lagu-lagu dari album Handmade secara utuh, sebagai perayaan dan penghormatan atas sepuluh tahun perjalanan album tersebut.
+        <br><br>
+        Digelar secara intim di Graha Bhakti Budaya, Jakarta, malam ini menghadirkan kedekatan antara RAISA dan para penikmat musik — dari lagu-lagu yang melekat di hati hingga nada-nada penuh kenangan. Bersiaplah bernostalgia dan merayakan satu dekade cerita bersama.
+      </div>
+    </section>
+
+    <section class="section fade" id="tiket">
+      <h2 class="section-title">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#16305c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v2z"/><path d="M13 5v2M13 11v2M13 17v2"/></svg>
+        Tiket
+      </h2>
+      <div class="pticket" id="ticket">
+        <button class="pt-head" type="button" id="ticketHead" aria-expanded="true" aria-controls="ticketBody">
+          <span>
+            <span class="pt-name">ONLINE SALES</span>
+            <span class="pt-sub">9 kategori tiket &ndash; Harga mulai dari <b>Rp750.000</b></span>
+          </span>
+          <span class="pt-chev" aria-hidden="true"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#2264e5" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg></span>
+        </button>
+        <div class="pt-body" id="ticketBody">
+          <div class="pt-body-inner">
+            <div class="pt-row">
+              <div class="pt-row-top"><span class="pt-type">CAT 1 - CENTER</span><span class="badge available">Available</span></div>
+              <div class="pt-date">Batas pembelian: 4 Nov 2026 &ensp;&middot;&ensp;19.30 WIB</div>
+              <div class="pt-price">Rp1.250.000</div>
+            </div>
+            <div class="pt-row soldout">
+              <div class="pt-row-top"><span class="pt-type">CAT 2 - LEFT</span><span class="badge fullbooked">Full Booked</span></div>
+              <div class="pt-date">Batas pembelian: 4 Nov 2026 &ensp;&middot;&ensp;19.30 WIB</div>
+              <div class="pt-price">Rp1.100.000</div>
+            </div>
+            <div class="pt-row soldout">
+              <div class="pt-row-top"><span class="pt-type">CAT 2 - RIGHT</span><span class="badge fullbooked">Full Booked</span></div>
+              <div class="pt-date">Batas pembelian: 4 Nov 2026 &ensp;&middot;&ensp;19.30 WIB</div>
+              <div class="pt-price">Rp1.100.000</div>
+            </div>
+            <div class="pt-row soldout">
+              <div class="pt-row-top"><span class="pt-type">CAT 3 - CENTER</span><span class="badge fullbooked">Full Booked</span></div>
+              <div class="pt-date">Batas pembelian: 4 Nov 2026 &ensp;&middot;&ensp;19.30 WIB</div>
+              <div class="pt-price">Rp850.000</div>
+            </div>
+            <div class="pt-row">
+              <div class="pt-row-top"><span class="pt-type">CAT 3 - LEFT</span><span class="badge available">Available</span></div>
+              <div class="pt-date">Batas pembelian: 4 Nov 2026 &ensp;&middot;&ensp;19.30 WIB</div>
+              <div class="pt-price">Rp850.000</div>
+            </div>
+            <div class="pt-row">
+              <div class="pt-row-top"><span class="pt-type">CAT 3 - RIGHT</span><span class="badge available">Available</span></div>
+              <div class="pt-date">Batas pembelian: 4 Nov 2026 &ensp;&middot;&ensp;19.30 WIB</div>
+              <div class="pt-price">Rp850.000</div>
+            </div>
+            <div class="pt-row">
+              <div class="pt-row-top"><span class="pt-type">CAT 4 - CENTER</span><span class="badge available">Available</span></div>
+              <div class="pt-date">Batas pembelian: 4 Nov 2026 &ensp;&middot;&ensp;19.30 WIB</div>
+              <div class="pt-price">Rp750.000</div>
+            </div>
+            <div class="pt-row soldout">
+              <div class="pt-row-top"><span class="pt-type">CAT 5 - LEFT</span><span class="badge fullbooked">Full Booked</span></div>
+              <div class="pt-date">Batas pembelian: 4 Nov 2026 &ensp;&middot;&ensp;19.30 WIB</div>
+              <div class="pt-price">Rp650.000</div>
+            </div>
+            <div class="pt-row soldout">
+              <div class="pt-row-top"><span class="pt-type">CAT 6 - RIGHT</span><span class="badge fullbooked">Full Booked</span></div>
+              <div class="pt-date">Batas pembelian: 4 Nov 2026 &ensp;&middot;&ensp;19.30 WIB</div>
+              <div class="pt-price">Rp600.000</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fade" id="snk">
+      <h2 class="section-title">Syarat dan Ketentuan</h2>
+      <div class="rules">
+        <ul>
+          <li>Tiket RAISA HANDMADE NIGHT hanya dijual melalui LOKET.com dan kanal resmi LOKET.</li>
+          <li>Setiap e-tiket memiliki barcode unik yang dipindai saat masuk venue; pembeli bertanggung jawab penuh atas keamanan barcode-nya.</li>
+          <li>Dengan membeli tiket, Anda menyetujui data pribadi Anda diteruskan kepada penyelenggara RAISA HANDMADE NIGHT.</li>
+          <li>Terdapat batas jumlah transaksi tiket per akun sesuai ketentuan yang berlaku.</li>
+          <li>Penempatan kursi mengikuti mekanisme first-come-first-served sesuai kategori tiket.</li>
+          <li>Tiket yang dibeli di luar kanal resmi dinyatakan tidak sah dan tidak dapat digunakan untuk masuk.</li>
+          <li>Penonton usia 17 tahun ke atas wajib membeli tiket; penonton di bawah umur dapat membeli tiket dengan menunjukkan identitas yang sah.</li>
+          <li>Acara tidak disarankan untuk anak di bawah usia 5 tahun.</li>
+          <li>Dilarang membawa barang tajam, mudah terbakar, dan narkotika ke dalam area acara.</li>
+          <li>Dilarang menggunakan perangkat perekam profesional tanpa izin penyelenggara.</li>
+          <li>Penyelenggara tidak bertanggung jawab atas kehilangan atau kerusakan barang pribadi penonton.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section fade" id="event-lain">
+      <h2 class="section-title">Event Untuk Kamu</h2>
+      <div class="cards">
+        <article class="event-card">
+          <img src="banner.webp" alt="BADONCI FESTIVAL DISK.2" loading="lazy" decoding="async">
+          <div class="event-body"><b>BADONCI FESTIVAL DISK.2</b><small>SIGMA PRO INDONESIA &middot; Manado</small><div class="price">Gratis</div></div>
+        </article>
+        <article class="event-card">
+          <img src="banner.webp" alt="LOKÉT 13th" loading="lazy" decoding="async">
+          <div class="event-body"><b>LOKÉT 13th</b><small>LOKET &middot; Spesial 13 Tahun</small><div class="price">Gratis</div></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="f-brand">
+      <img src="logo.png" alt="LOKET13" loading="lazy" decoding="async">
+      <p>LOKÉT 13th — 13 tahun memudahkan kamu membeli tiket konser, festival, sport event, dan event lainnya. #PastiBisa beli tiket event di mana saja.</p>
+      <div class="social">
+        <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37a4 4 0 1 1-7.9 1.26 4 4 0 0 1 7.9-1.26z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3z"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V8h4v1.5A6 6 0 0 1 16 8z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a href="#" aria-label="X"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 4l16 16M20 4 4 20"/></svg></a>
+      </div>
+    </div>
+
+    <form class="newsletter" id="nlForm">
+      <label class="nl-title" for="nlEmail">Dapatkan Info Event Terbaru</label>
+      <div class="nl-row">
+        <input type="email" id="nlEmail" name="email" placeholder="Alamat email kamu" autocomplete="email" required>
+        <button type="submit">Berlangganan</button>
+      </div>
+      <p class="nl-msg" id="nlMsg" role="status"></p>
+    </form>
+
+    <nav class="footer-grid" aria-label="Tautan situs LOKET">
+      <div><h3>Tentang LOKET</h3><a href="#">Tentang Kami</a><a href="#">Blog</a><a href="#">Karier</a><a href="#">Press Kit</a></div>
+      <div><h3>Dukungan</h3><a href="#">Pusat Bantuan</a><a href="#">Hubungi Kami</a><a href="#">Cara Beli Tiket</a><a href="#">Lacak Pesanan</a></div>
+      <div><h3>Event Creator</h3><a href="#">Buat Event</a><a href="#">Mitra Organizer</a><a href="#">LOKET untuk Bisnis</a></div>
+      <div><h3>Produk</h3><a href="#">LOKET App</a><a href="#">LOKET Live</a><a href="#">LOKET Cloud</a><a href="#">LOKET Pay</a></div>
+    </nav>
+
+    <div class="f-section">
+      <h3>Metode Pembayaran</h3>
+      <div class="payments"><span class="pay">QRIS</span><span class="pay">VISA</span><span class="pay">Mastercard</span><span class="pay">BCA</span><span class="pay">BNI</span><span class="pay">BRI</span><span class="pay">Mandiri</span><span class="pay">Livin'</span><span class="pay">GoPay</span><span class="pay">OVO</span><span class="pay">ShopeePay</span></div>
+    </div>
+
+    <div class="f-section">
+      <h3>Keamanan dan Privasi</h3>
+      <div class="secure">
+        <span class="secure-badge"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Transaksi Terenkripsi</span>
+        <span class="secure-badge">ISO 27001</span>
+        <span class="secure-badge">Data Dilindungi UU PDP</span>
+      </div>
+    </div>
+
+    <div class="f-bottom">
+      <button class="to-top" id="toTop" type="button"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>Ke Atas</button>
+      <p class="copyright">&copy; 2026 LOKET (PT Global Loket Sejahtera)</p>
+      <p class="f-legal"><a href="#">Syarat &amp; Ketentuan</a><a href="#">Kebijakan Privasi</a><a href="#">Kebijakan Cookie</a></p>
+    </div>
+  </footer>
+
+  <div class="sticky">
+    <div class="sticky-row">
+      <span class="sticky-label">Harga mulai dari</span>
+      <span class="sticky-price">Rp750.000</span>
+    </div>
+    <a class="buy-btn" href="tiket.html">Beli Tiket</a>
+  </div>
+</div>
+
+<script>
+(() => {
+  'use strict';
+  const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
+  const $ = (selector, root = document) => root.querySelector(selector);
+  const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
+
+  const menuButton = $('#menuBtn');
+  const menuPanel = $('#menuPanel');
+  if (menuButton && menuPanel) {
+    const setMenu = (open, restoreFocus = false) => {
+      menuPanel.classList.toggle('open', open);
+      menuButton.classList.toggle('open', open);
+      menuButton.setAttribute('aria-expanded', String(open));
+      menuButton.setAttribute('aria-label', open ? 'Tutup menu' : 'Buka menu');
+      if (restoreFocus) menuButton.focus();
+    };
+    menuButton.addEventListener('click', event => {
+      event.stopPropagation();
+      setMenu(menuButton.getAttribute('aria-expanded') !== 'true');
+    });
+    menuPanel.addEventListener('click', event => {
+      if (event.target.closest('a')) setMenu(false);
+    });
+    document.addEventListener('click', event => {
+      if (!event.target.closest('.menu-wrap')) setMenu(false);
+    });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') setMenu(false, true);
+    });
+  }
+
+  const ticket = $('#ticket');
+  const ticketHead = $('#ticketHead');
+  if (ticket && ticketHead) {
+    ticketHead.addEventListener('click', () => {
+      const collapsed = ticket.classList.toggle('collapsed');
+      ticketHead.setAttribute('aria-expanded', String(!collapsed));
+    });
+  }
+
+  const tabs = $$('.tab');
+  const activateTab = tab => {
+    tabs.forEach(item => {
+      const active = item === tab;
+      item.classList.toggle('active', active);
+      if (active) item.setAttribute('aria-current', 'location');
+      else item.removeAttribute('aria-current');
+    });
+  };
+  tabs.forEach(tab => tab.addEventListener('click', () => activateTab(tab)));
+
+  if ('IntersectionObserver' in window) {
+    const fadeObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          fadeObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    $$('.fade').forEach(element => fadeObserver.observe(element));
+
+    const tabMap = new Map(tabs.map(tab => [tab.getAttribute('href')?.slice(1), tab]));
+    const sectionObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const tab = tabMap.get(entry.target.id);
+          if (tab) activateTab(tab);
+        }
+      });
+    }, { rootMargin: '-70px 0px -65% 0px' });
+    $$('#deskripsi, #tiket, #snk, #event-lain').forEach(section => sectionObserver.observe(section));
+  } else {
+    $$('.fade').forEach(element => element.classList.add('show'));
+  }
+
+  const shareButton = $('#shareBtn');
+  const shareLabel = $('.share-label', shareButton || document);
+  let shareTimer;
+  const showShareMessage = message => {
+    if (!shareLabel) return;
+    shareLabel.textContent = message;
+    window.clearTimeout(shareTimer);
+    shareTimer = window.setTimeout(() => { shareLabel.textContent = 'Bagikan Event'; }, 1800);
+  };
+  const copyText = async value => {
+    try {
+      if (navigator.clipboard?.writeText && window.isSecureContext) {
+        await navigator.clipboard.writeText(value);
+      } else {
+        const field = document.createElement('textarea');
+        field.value = value;
+        field.setAttribute('readonly', '');
+        field.style.cssText = 'position:fixed;left:-9999px;top:0';
+        document.body.appendChild(field);
+        field.select();
+        const copied = document.execCommand('copy');
+        field.remove();
+        if (!copied) throw new Error('Copy unavailable');
+      }
+      showShareMessage('Link Disalin!');
+    } catch {
+      showShareMessage('Gagal menyalin link');
+    }
+  };
+  shareButton?.addEventListener('click', async () => {
+    const shareData = { title: document.title, url: window.location.href };
+    if (navigator.share) {
+      try { await navigator.share(shareData); }
+      catch (error) { if (error?.name !== 'AbortError') await copyText(shareData.url); }
+    } else {
+      await copyText(shareData.url);
+    }
+  });
+
+  const searchForm = $('.searchbar');
+  const searchInput = $('#eventSearch');
+  const searchStatus = $('#searchStatus');
+  searchForm?.addEventListener('submit', event => {
+    event.preventDefault();
+    const query = searchInput?.value.trim().toLocaleLowerCase('id');
+    if (!query) {
+      searchStatus.textContent = 'Masukkan kata kunci event.';
+      searchInput?.focus();
+      return;
+    }
+    const targets = [$('#deskripsi'), $('#tiket'), $('#event-lain')].filter(Boolean);
+    const match = targets.find(element => element.textContent.toLocaleLowerCase('id').includes(query));
+    if (match) {
+      searchStatus.textContent = 'Hasil ditemukan.';
+      match.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'start' });
+    } else {
+      searchStatus.textContent = 'Tidak ada hasil pada halaman ini.';
+    }
+  });
+
+  $('#nlForm')?.addEventListener('submit', event => {
+    event.preventDefault();
+    const message = $('#nlMsg');
+    if (message) message.textContent = 'Pendaftaran newsletter belum tersedia. Silakan coba lagi nanti.';
+  });
+
+  $('#toTop')?.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: reducedMotion ? 'auto' : 'smooth' });
+  });
+
+  // Placeholder links are intentionally inert until official destinations are configured.
+  $$('a[href="#"]').forEach(link => {
+    link.addEventListener('click', event => event.preventDefault());
+    link.setAttribute('aria-disabled', 'true');
+  });
+
+  const progress = $('#progress');
+  if (progress) {
+    let scheduled = false;
+    const updateProgress = () => {
+      const root = document.documentElement;
+      const range = root.scrollHeight - root.clientHeight;
+      progress.style.transform = `scaleX(${range > 0 ? root.scrollTop / range : 0})`;
+      scheduled = false;
+    };
+    window.addEventListener('scroll', () => {
+      if (!scheduled) {
+        scheduled = true;
+        window.requestAnimationFrame(updateProgress);
+      }
+    }, { passive: true });
+    updateProgress();
+  }
+})();
+</script>
+</body>
+</html>
