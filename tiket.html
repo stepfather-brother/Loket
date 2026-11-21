@@ -215,11 +215,14 @@ document.querySelectorAll('.ticket:not(.soldout)').forEach(card=>{
 const submitOrder=()=>{
   const selected=order.filter(i=>i.qty>0).map(i=>({name:i.name,price:i.price,qty:i.qty}));
   if(!selected.length||qtyTotal<1||qtyTotal>MAX_TOTAL)return false;
-  const payload={items:selected,totalQuantity:qtyTotal,totalPrice:sumTotal};
+  const payload=selected;
   try{
     sessionStorage.setItem(STORAGE_KEY,JSON.stringify(payload));
     const saved=sessionStorage.getItem(STORAGE_KEY);
-    if(!saved||JSON.parse(saved).totalPrice!==sumTotal)throw new Error('Order storage verification failed');
+    const verified=JSON.parse(saved||'null');
+    const verifiedQty=Array.isArray(verified)?verified.reduce((n,item)=>n+(Number(item.qty)||0),0):0;
+    const verifiedTotal=Array.isArray(verified)?verified.reduce((n,item)=>n+(Number(item.price)||0)*(Number(item.qty)||0),0):0;
+    if(!Array.isArray(verified)||verifiedQty!==qtyTotal||verifiedTotal!==sumTotal)throw new Error('Order storage verification failed');
   }catch(err){
     navigating=false;
     document.body.classList.remove('fade-out');
